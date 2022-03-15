@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('produtos', ['App\Http\Controllers\ProdutoController', 'index']);
+
+Route::post('produtos', ['App\Http\Controllers\ProdutoController', 'store']);
